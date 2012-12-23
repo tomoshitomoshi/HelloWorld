@@ -1,8 +1,9 @@
 package jp.android.helloworld;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +11,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		TextView hello = (TextView)findViewById(R.id.hello_world);
+		hello.setText("Hello");
 	}
 
 	@Override
